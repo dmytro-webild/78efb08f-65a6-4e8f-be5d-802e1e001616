@@ -63,12 +63,12 @@ export default function LandingPage() {
   <div id="about" data-section="about">
       <TextAbout
       useInvertedBackground={true}
-      tag="Professional Profile"
-      tagIcon={Briefcase}
-      title="Ibrahim Nimer Odeh: Strategic Business & Technology Leader"
+      tag="Strategic Leader"
+      tagIcon={Award}
+      title="Ibrahim Odeh: Architect of Digital Transformation"
       buttons={[
-        { text: "View LinkedIn Profile", href: "https://www.linkedin.com/in/ibrahim-nimer-odeh-a1a52878/" },
-        { text: "Email Ibrahim", href: "mailto:ibrahim@ibrix.digital" }
+        { text: "View Profile", href: "https://www.linkedin.com/in/ibrahim-nimer-odeh-a1a52878/" },
+        { text: "Contact Me", href: "mailto:ibrahim@ibrix.digital" }
       ]}
       className="bg-[url('https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DygXGhNKmIykMHIKfCzx7B0v4x/uploaded-1779261338417-ancgfolw.png')] bg-no-repeat bg-right-top bg-contain"
     />
