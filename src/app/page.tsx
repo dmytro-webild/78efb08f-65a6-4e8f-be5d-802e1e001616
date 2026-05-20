@@ -9,7 +9,7 @@ import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
 
@@ -36,7 +36,7 @@ export default function LandingPage() {
     >
       <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
   <div id="nav" data-section="nav" aria-label="Navigation">
-      <NavbarStyleApple
+      <NavbarStyleCentered
       navItems={[
         { name: "About", id: "#about" },
         { name: "Expertise", id: "#expertise" },
@@ -44,7 +44,6 @@ export default function LandingPage() {
         { name: "Services", id: "#services" },
         { name: "Testimonials", id: "#testimonials" },
         { name: "Pricing", id: "/pricing" },
-        { name: lang === "en" ? "AR" : "EN", id: "#lang-switch" },
       ]}
       brandName="IBRIX"
     />
