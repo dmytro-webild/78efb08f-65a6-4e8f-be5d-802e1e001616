@@ -31,6 +31,7 @@ export default function PricingPage() {
             { name: "Pricing", id: "/pricing" },
           ]}
           brandName="IBRIX"
+          logoClassName="w-12 h-12"
         />
         
         <div id="pricing" className="pt-32 pb-20">
@@ -55,6 +56,7 @@ export default function PricingPage() {
             { title: "Contact", items: [{ label: "WhatsApp", href: "https://wa.me/962787789915" }, { label: "Email", href: "mailto:info@ibrix.digital" }] },
           ]}
           copyrightText="© 2026 IBRIX. All rights reserved."
+          logoImageClassName="w-16 h-16"
         />
       </ReactLenis>
     </ThemeProvider>
