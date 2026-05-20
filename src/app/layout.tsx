@@ -6,7 +6,6 @@ import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Poppins } from "next/font/google";
-import Tag from "@/tag/Tag";
 
 
 
@@ -42,7 +41,7 @@ export default function RootLayout({
                   __html: `${getVisualEditScript()}`
               }}
           />
-        <Tag />
+        
 </body>
       </ServiceWrapper>
     </html>
