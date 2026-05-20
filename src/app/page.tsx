@@ -11,7 +11,7 @@ import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
-import { Award, CheckCircle, Users, Mail, Phone, Briefcase } from "lucide-react";
+import { Briefcase, GraduationCap, Award, Building2 } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -63,11 +63,11 @@ export default function LandingPage() {
   <div id="about" data-section="about">
       <TextAbout
       useInvertedBackground={true}
-      tag="Leadership"
+      tag="Professional Profile"
       tagIcon={Briefcase}
-      title="Ibrahim Odeh: Pioneering Digital Excellence"
+      title="Ibrahim Nimer Odeh: Strategic Business & Technology Leader"
       buttons={[
-        { text: "Connect on LinkedIn", href: "https://linkedin.com/in/ibrahim-odeh" },
+        { text: "View LinkedIn Profile", href: "https://www.linkedin.com/in/ibrahim-nimer-odeh-a1a52878/" },
         { text: "Email Ibrahim", href: "mailto:ibrahim@ibrix.digital" }
       ]}
       className="bg-[url('https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DygXGhNKmIykMHIKfCzx7B0v4x/uploaded-1779261338417-ancgfolw.png')] bg-no-repeat bg-right-top bg-contain"
