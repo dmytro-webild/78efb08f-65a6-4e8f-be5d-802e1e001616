@@ -47,6 +47,7 @@ export default function LandingPage() {
         { name: lang === "en" ? "AR" : "EN", id: "#lang-switch" },
       ]}
       brandName="IBRIX"
+      logoClassName="w-12 h-12"
     />
   </div>
 
@@ -200,6 +201,7 @@ export default function LandingPage() {
         { title: "Contact", items: [{ label: "WhatsApp", href: "https://wa.me/962787789915" }, { label: "Email", href: "mailto:info@ibrix.digital" }] },
       ]}
       copyrightText="© 2026 IBRIX. All rights reserved."
+      logoImageClassName="w-16 h-16"
     />
   </div>
       </ReactLenis>
