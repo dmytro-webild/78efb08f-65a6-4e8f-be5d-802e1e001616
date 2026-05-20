@@ -6,12 +6,13 @@ import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Poppins } from "next/font/google";
+import Tag from "@/tag/Tag";
 
 
 
 export const metadata: Metadata = {
-  title: 'IBRIX | Digital Growth Agency',
-  description: 'IBRIX is a premium digital growth agency in Jordan, delivering expert web design, app development, and AI strategy for global businesses.',
+  title: "IBRIX | Digital Growth Agency",
+  description: "IBRIX is a premium digital growth agency in Jordan, delivering expert web design, app development, and AI strategy for global businesses.",
   openGraph: {
     "title": "IBRIX | Digital Growth Agency",
     "description": "Expert digital solutions & consulting.",
@@ -41,7 +42,8 @@ export default function RootLayout({
                   __html: `${getVisualEditScript()}`
               }}
           />
-        </body>
+        <Tag />
+</body>
       </ServiceWrapper>
     </html>
   );
