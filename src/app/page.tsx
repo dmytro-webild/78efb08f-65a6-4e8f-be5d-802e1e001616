@@ -32,21 +32,13 @@ export default function LandingPage() {
       <NavbarStyleCentered
       navItems={[
         {
-          name: "About",
-          id: "#about",
-        },
+          name: "About",          id: "#about"},
         {
-          name: "Works",
-          id: "#works",
-        },
+          name: "Works",          id: "#works"},
         {
-          name: "Services",
-          id: "#services",
-        },
+          name: "Services",          id: "#services"},
         {
-          name: "Testimonials",
-          id: "#testimonials",
-        },
+          name: "Testimonials",          id: "#testimonials"},
       ]}
       brandName="IBRIX"
     />
@@ -55,42 +47,21 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroSplitDualMedia
       background={{
-        variant: "gradient-bars",
-      }}
+        variant: "gradient-bars"}}
       title="We Build Better Than AI"
       description="Premium digital agency. IBRIX transforms your vision into measurable growth through human-centric engineering."
       tag="PREMIUM DIGITAL GROWTH AGENCY"
       buttons={[
         {
-          text: "EXPLORE WORK",
-          href: "#works",
-        },
+          text: "EXPLORE WORK",          href: "#works"},
         {
-          text: "INITIATE CONTACT",
-          href: "#contact",
-        },
+          text: "INITIATE CONTACT",          href: "#contact"},
       ]}
       mediaItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/financial-analyst-analyzing-stock-market-data_23-2151966699.jpg",
-          imageAlt: "digital agency office technology",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/financial-analyst-analyzing-stock-market-data_23-2151966699.jpg",          imageAlt: "digital agency office technology"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-employee-looking-startup-analytics-pc_482257-74478.jpg",
-          imageAlt: "digital agency office technology",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/scene-with-business-person-working-futuristic-office-job_23-2151003722.jpg",
-          imageAlt: "Scene with business person working futuristic office job",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/businessman-checking-his-phone_53876-93007.jpg",
-          imageAlt: "Businessman checking his phone",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/industrial-designers-working-office-with-computers_23-2149307806.jpg",
-          imageAlt: "Industrial designers working at office with computers",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/woman-employee-looking-startup-analytics-pc_482257-74478.jpg",          imageAlt: "digital agency office technology"},
       ]}
       mediaAnimation="slide-up"
       rating={5}
@@ -104,19 +75,13 @@ export default function LandingPage() {
       title="Proven Results"
       metrics={[
         {
-          label: "Projects Delivered",
-          value: "120+",
-          icon: CheckCircle,
+          label: "Projects Delivered",          value: "120+",          icon: CheckCircle,
         },
         {
-          label: "Happy Clients",
-          value: "85+",
-          icon: Users,
+          label: "Happy Clients",          value: "85+",          icon: Users,
         },
         {
-          label: "Years Experience",
-          value: "10+",
-          icon: Award,
+          label: "Years Experience",          value: "10+",          icon: Award,
         },
       ]}
       metricsAnimation="slide-up"
@@ -130,17 +95,11 @@ export default function LandingPage() {
       useInvertedBackground={false}
       negativeCard={{
         items: [
-          "Generic templated solutions",
-          "Slow project delivery",
-          "Non-measurable results",
-        ],
+          "Generic templated solutions",          "Slow project delivery",          "Non-measurable results"],
       }}
       positiveCard={{
         items: [
-          "Custom engineered ecosystems",
-          "Swift execution & delivery",
-          "Real, measurable ROI",
-        ],
+          "Custom engineered ecosystems",          "Swift execution & delivery",          "Real, measurable ROI"],
       }}
       title="Why Choose IBRIX?"
       description="We combine human creativity with strategic technology to build exceptional digital ecosystems."
@@ -155,41 +114,17 @@ export default function LandingPage() {
       useInvertedBackground={true}
       products={[
         {
-          id: "1",
-          name: "Jordan Travel Market",
-          price: "Tourism & Exhibition",
-          imageSrc: "http://img.b2bpic.net/free-photo/air-ticket-flight-booking-concept_53876-121109.jpg",
-        },
+          id: "1",          name: "Jordan Travel Market",          price: "Tourism & Exhibition",          imageSrc: "http://img.b2bpic.net/free-photo/air-ticket-flight-booking-concept_53876-121109.jpg"},
         {
-          id: "2",
-          name: "Ghazal Travel & Tourism",
-          price: "Travel Agency",
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-photographer-using-touch-screen-computer_482257-19488.jpg",
-        },
+          id: "2",          name: "Ghazal Travel & Tourism",          price: "Travel Agency",          imageSrc: "http://img.b2bpic.net/free-photo/woman-photographer-using-touch-screen-computer_482257-19488.jpg"},
         {
-          id: "3",
-          name: "Aqaba Coral",
-          price: "Hospitality & Tourism",
-          imageSrc: "http://img.b2bpic.net/free-vector/beauty-salon-booking-app_23-2148566379.jpg",
-        },
+          id: "3",          name: "Aqaba Coral",          price: "Hospitality & Tourism",          imageSrc: "http://img.b2bpic.net/free-vector/beauty-salon-booking-app_23-2148566379.jpg"},
         {
-          id: "4",
-          name: "Inoibo",
-          price: "Technology & Innovation",
-          imageSrc: "http://img.b2bpic.net/free-photo/login-box-username-password-inputs-virtual-digital-display_169016-40044.jpg",
-        },
+          id: "4",          name: "Inoibo",          price: "Technology & Innovation",          imageSrc: "http://img.b2bpic.net/free-photo/login-box-username-password-inputs-virtual-digital-display_169016-40044.jpg"},
         {
-          id: "5",
-          name: "Corporate Identity",
-          price: "Branding",
-          imageSrc: "http://img.b2bpic.net/free-photo/dollar-sign-right-side_187299-39238.jpg",
-        },
+          id: "5",          name: "Corporate Identity",          price: "Branding",          imageSrc: "http://img.b2bpic.net/free-photo/dollar-sign-right-side_187299-39238.jpg"},
         {
-          id: "6",
-          name: "Growth Strategy",
-          price: "Consulting",
-          imageSrc: "http://img.b2bpic.net/free-photo/friends-looking-laptop-new-website_171337-19397.jpg",
-        },
+          id: "6",          name: "Growth Strategy",          price: "Consulting",          imageSrc: "http://img.b2bpic.net/free-photo/friends-looking-laptop-new-website_171337-19397.jpg"},
       ]}
       title="Selected Works"
       description="A selection of recent projects across tourism, hospitality, and technology sectors."
@@ -203,40 +138,15 @@ export default function LandingPage() {
       useInvertedBackground={false}
       testimonials={[
         {
-          id: "1",
-          name: "Ahmed Hassan",
-          handle: "CEO, Jordan Travel Market",
-          testimonial: "IBRIX transformed our online presence completely. Bookings increased by 150% in 6 months.",
-          imageSrc: "http://img.b2bpic.net/free-photo/confident-successful-middle-aged-business-leader_1262-4872.jpg",
-        },
+          id: "1",          name: "Ahmed Hassan",          handle: "CEO, Jordan Travel Market",          testimonial: "IBRIX transformed our online presence completely. Bookings increased by 150% in 6 months.",          imageSrc: "http://img.b2bpic.net/free-photo/confident-successful-middle-aged-business-leader_1262-4872.jpg"},
         {
-          id: "2",
-          name: "Fatima Al-Rashid",
-          handle: "Marketing Director, Ghazal Travel",
-          testimonial: "The digital marketing strategy they created was game-changing for our engagement.",
-          imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-with-laptop-office_23-2147787595.jpg",
-        },
+          id: "2",          name: "Fatima Al-Rashid",          handle: "Marketing Director, Ghazal Travel",          testimonial: "The digital marketing strategy they created was game-changing for our engagement.",          imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-with-laptop-office_23-2147787595.jpg"},
         {
-          id: "3",
-          name: "Omar Khalil",
-          handle: "Founder, Aqaba Coral",
-          testimonial: "Professional, creative, and results-driven. They delivered exactly what we needed.",
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-working-computer-cafe-drinking-coffee_1303-30002.jpg",
-        },
+          id: "3",          name: "Omar Khalil",          handle: "Founder, Aqaba Coral",          testimonial: "Professional, creative, and results-driven. They delivered exactly what we needed.",          imageSrc: "http://img.b2bpic.net/free-photo/woman-working-computer-cafe-drinking-coffee_1303-30002.jpg"},
         {
-          id: "4",
-          name: "Sara Mansour",
-          handle: "Manager, Inoibo",
-          testimonial: "The tech solutions provided by IBRIX are world-class.",
-          imageSrc: "http://img.b2bpic.net/free-photo/middle-eastern-businessman-does-daily-tasks-corporate-job_482257-116713.jpg",
-        },
+          id: "4",          name: "Sara Mansour",          handle: "Manager, Inoibo",          testimonial: "The tech solutions provided by IBRIX are world-class.",          imageSrc: "http://img.b2bpic.net/free-photo/middle-eastern-businessman-does-daily-tasks-corporate-job_482257-116713.jpg"},
         {
-          id: "5",
-          name: "David Smith",
-          handle: "Tech Lead, Global",
-          testimonial: "Their engineering skills are top-notch. Highly recommended for any serious business.",
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-mature-businessman-looking-away_23-2147955371.jpg",
-        },
+          id: "5",          name: "David Smith",          handle: "Tech Lead, Global",          testimonial: "Their engineering skills are top-notch. Highly recommended for any serious business.",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-mature-businessman-looking-away_23-2147955371.jpg"},
       ]}
       title="What Our Clients Say"
       description="Trusted by global brands and local leaders alike."
@@ -248,20 +158,11 @@ export default function LandingPage() {
       useInvertedBackground={true}
       faqs={[
         {
-          id: "f1",
-          title: "What services does IBRIX provide?",
-          content: "We provide full-stack development, AI solutions, digital marketing, and strategic consulting.",
-        },
+          id: "f1",          title: "What services does IBRIX provide?",          content: "We provide full-stack development, AI solutions, digital marketing, and strategic consulting."},
         {
-          id: "f2",
-          title: "How long does a typical project take?",
-          content: "Project timelines vary by scope, but we focus on swift execution without compromising on quality.",
-        },
+          id: "f2",          title: "How long does a typical project take?",          content: "Project timelines vary by scope, but we focus on swift execution without compromising on quality."},
         {
-          id: "f3",
-          title: "Do you work with global clients?",
-          content: "Yes, we have delivered projects across 12 countries and support diverse global industries.",
-        },
+          id: "f3",          title: "Do you work with global clients?",          content: "Yes, we have delivered projects across 12 countries and support diverse global industries."},
       ]}
       sideTitle="Common Questions"
       faqsAnimation="slide-up"
@@ -272,8 +173,7 @@ export default function LandingPage() {
       <ContactCenter
       useInvertedBackground={false}
       background={{
-        variant: "sparkles-gradient",
-      }}
+        variant: "sparkles-gradient"}}
       tag="CONTACT US"
       title="Got a vision? Let's build it."
       description="Ready to scale? Connect with our team today for a custom consultation."
@@ -285,29 +185,19 @@ export default function LandingPage() {
       logoText="IBRIX"
       columns={[
         {
-          title: "Company",
-          items: [
+          title: "Company",          items: [
             {
-              label: "About",
-              href: "#about",
-            },
+              label: "About",              href: "#about"},
             {
-              label: "Services",
-              href: "#services",
-            },
+              label: "Services",              href: "#services"},
           ],
         },
         {
-          title: "Contact",
-          items: [
+          title: "Contact",          items: [
             {
-              label: "WhatsApp",
-              href: "https://wa.me/962787789915",
-            },
+              label: "WhatsApp",              href: "https://wa.me/962787789915"},
             {
-              label: "Email",
-              href: "mailto:info@ibrix.digital",
-            },
+              label: "Email",              href: "mailto:info@ibrix.digital"},
           ],
         },
       ]}
