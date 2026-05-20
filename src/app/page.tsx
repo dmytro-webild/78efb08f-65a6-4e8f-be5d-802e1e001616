@@ -34,8 +34,8 @@ export default function LandingPage() {
         secondaryButtonStyle="radial-glow"
         headingFontWeight="bold"
     >
-      <ReactLenis root>
-  <div id="nav" data-section="nav">
+      <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
+  <div id="nav" data-section="nav" aria-label="Navigation">
       <NavbarStyleApple
       navItems={[
         { name: "About", id: "#about" },
@@ -52,6 +52,7 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplitDualMedia
+      ariaLabel="Hero section"
       background={{ variant: "gradient-bars" }}
       title="We Build Better Than AI"
       description="Premium digital agency. IBRIX transforms your vision into measurable growth through human-centric engineering."
@@ -72,6 +73,7 @@ export default function LandingPage() {
 
   <div id="about" data-section="about">
       <TextSplitAbout
+      ariaLabel="About section"
       useInvertedBackground={true}
       title="Architecting Your Digital Future"
       description={[
@@ -86,6 +88,7 @@ export default function LandingPage() {
 
   <div id="expertise" data-section="expertise">
       <FeatureCardSixteen
+        ariaLabel="Expertise section"
         animationType="slide-up"
         textboxLayout="default"
         useInvertedBackground={false}
@@ -98,6 +101,7 @@ export default function LandingPage() {
 
   <div id="languages" data-section="languages">
       <FeatureCardSixteen
+        ariaLabel="Languages section"
         animationType="slide-up"
         textboxLayout="default"
         useInvertedBackground={true}
@@ -110,6 +114,7 @@ export default function LandingPage() {
 
   <div id="services" data-section="services">
       <FeatureCardSixteen
+      ariaLabel="Services section"
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
@@ -122,6 +127,7 @@ export default function LandingPage() {
 
   <div id="works" data-section="works">
       <ProductCardOne
+      ariaLabel="Works section"
       animationType="slide-up"
       textboxLayout="split-description"
       gridVariant="bento-grid"
@@ -141,6 +147,7 @@ export default function LandingPage() {
 
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTwelve
+      ariaLabel="Testimonials section"
       cardAnimation="slide-up"
       useInvertedBackground={false}
       testimonials={[
@@ -157,6 +164,7 @@ export default function LandingPage() {
 
   <div id="faq" data-section="faq">
       <FaqBase
+      ariaLabel="FAQ section"
       useInvertedBackground={true}
       faqs={[
         { id: "f1", title: "What services does IBRIX provide?", content: "We provide full-stack development, AI solutions, digital marketing, and strategic consulting." },
@@ -172,6 +180,7 @@ export default function LandingPage() {
 
   <div id="contact" data-section="contact">
       <ContactSplitForm
+      ariaLabel="Contact section"
       title="Got a vision? Let's build it."
       description="Ready to scale? Connect with our team today for a custom consultation."
       useInvertedBackground={true}
@@ -184,6 +193,7 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterBaseReveal
+      ariaLabel="Footer"
       logoText="IBRIX"
       columns={[
         { title: "Company", items: [{ label: "About", href: "#about" }, { label: "Services", href: "#services" }] },
