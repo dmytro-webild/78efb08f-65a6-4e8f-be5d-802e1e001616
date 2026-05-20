@@ -130,6 +130,7 @@ export default function LandingPage() {
         { id: "f3", title: "Do you work with global clients?", content: "Yes, we have delivered projects across 12 countries and support diverse global industries." },
       ]}
       title="Common Questions"
+      description="Everything you need to know about our process and services."
       faqsAnimation="slide-up"
       textboxLayout="default"
     />
@@ -139,6 +140,7 @@ export default function LandingPage() {
       <ContactSplitForm
       title="Got a vision? Let's build it."
       description="Ready to scale? Connect with our team today for a custom consultation."
+      useInvertedBackground={true}
       inputs={[
         { name: "name", type: "text", placeholder: "Your Name", required: true },
         { name: "email", type: "email", placeholder: "Your Email", required: true }
