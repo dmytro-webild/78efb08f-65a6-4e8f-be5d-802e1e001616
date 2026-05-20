@@ -35,6 +35,7 @@ export default function LandingPage() {
         { name: "Works", id: "#works" },
         { name: "Services", id: "#services" },
         { name: "Testimonials", id: "#testimonials" },
+        { name: "Pricing", id: "/pricing" },
       ]}
       brandName="IBRIX"
     />
