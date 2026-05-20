@@ -1,7 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import ReactLenis from "lenis/react";
@@ -21,7 +21,7 @@ export default function PricingPage() {
         headingFontWeight="bold"
     >
       <ReactLenis root>
-        <NavbarStyleApple
+        <NavbarStyleCentered
           navItems={[
             { name: "About", id: "/#about" },
             { name: "Expertise", id: "/#expertise" },
