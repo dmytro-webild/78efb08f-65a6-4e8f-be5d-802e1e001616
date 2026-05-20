@@ -3,15 +3,15 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import TextAbout from '@/components/sections/about/TextAbout';
-import ContactCenter from '@/components/sections/contact/ContactCenter';
-import FaqSplitText from '@/components/sections/faq/FaqSplitText';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
+import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
-import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
-import { Briefcase, GraduationCap, Award, Building2 } from "lucide-react";
+import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
+import { Award } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -106,42 +106,43 @@ export default function LandingPage() {
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardSix
-      animationType="slide-up"
-      textboxLayout="default"
+      <TestimonialCardTwelve
+      cardAnimation="slide-up"
       useInvertedBackground={false}
       testimonials={[
-        { id: "1", name: "Ahmed Hassan", handle: "CEO, Jordan Travel Market", testimonial: "IBRIX transformed our online presence completely. Bookings increased by 150% in 6 months.", imageSrc: "http://img.b2bpic.net/free-photo/confident-successful-middle-aged-business-leader_1262-4872.jpg" },
-        { id: "2", name: "Fatima Al-Rashid", handle: "Marketing Director, Ghazal Travel", testimonial: "The digital marketing strategy they created was game-changing for our engagement.", imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-with-laptop-office_23-2147787595.jpg" },
-        { id: "3", name: "Omar Khalil", handle: "Founder, Aqaba Coral", testimonial: "Professional, creative, and results-driven. They delivered exactly what we needed.", imageSrc: "http://img.b2bpic.net/free-photo/woman-working-computer-cafe-drinking-coffee_1303-30002.jpg" },
-        { id: "4", name: "Sara Mansour", handle: "Manager, Inoibo", testimonial: "The tech solutions provided by IBRIX are world-class.", imageSrc: "http://img.b2bpic.net/free-photo/middle-eastern-businessman-does-daily-tasks-corporate-job_482257-116713.jpg" },
-        { id: "5", name: "David Smith", handle: "Tech Lead, Global", testimonial: "Their engineering skills are top-notch. Highly recommended for any serious business.", imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-mature-businessman-looking-away_23-2147955371.jpg" },
+        { id: "1", name: "Ahmed Hassan", imageSrc: "http://img.b2bpic.net/free-photo/confident-successful-middle-aged-business-leader_1262-4872.jpg" },
+        { id: "2", name: "Fatima Al-Rashid", imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-with-laptop-office_23-2147787595.jpg" },
+        { id: "3", name: "Omar Khalil", imageSrc: "http://img.b2bpic.net/free-photo/woman-working-computer-cafe-drinking-coffee_1303-30002.jpg" },
+        { id: "4", name: "Sara Mansour", imageSrc: "http://img.b2bpic.net/free-photo/middle-eastern-businessman-does-daily-tasks-corporate-job_482257-116713.jpg" },
+        { id: "5", name: "David Smith", imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-mature-businessman-looking-away_23-2147955371.jpg" },
       ]}
-      title="What Our Clients Say"
-      description="Trusted by global brands and local leaders alike."
+      cardTitle="What Our Clients Say"
+      cardTag="Trusted by global brands and local leaders alike."
     />
   </div>
 
   <div id="faq" data-section="faq">
-      <FaqSplitText
+      <FaqBase
       useInvertedBackground={true}
       faqs={[
         { id: "f1", title: "What services does IBRIX provide?", content: "We provide full-stack development, AI solutions, digital marketing, and strategic consulting." },
         { id: "f2", title: "How long does a typical project take?", content: "Project timelines vary by scope, but we focus on swift execution without compromising on quality." },
         { id: "f3", title: "Do you work with global clients?", content: "Yes, we have delivered projects across 12 countries and support diverse global industries." },
       ]}
-      sideTitle="Common Questions"
+      title="Common Questions"
       faqsAnimation="slide-up"
+      textboxLayout="default"
     />
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCenter
-      useInvertedBackground={false}
-      background={{ variant: "sparkles-gradient" }}
-      tag="CONTACT US"
+      <ContactSplitForm
       title="Got a vision? Let's build it."
       description="Ready to scale? Connect with our team today for a custom consultation."
+      inputs={[
+        { name: "name", type: "text", placeholder: "Your Name", required: true },
+        { name: "email", type: "email", placeholder: "Your Email", required: true }
+      ]}
     />
   </div>
 
