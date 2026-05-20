@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import AboutMetric from '@/components/sections/about/AboutMetric';
+import TextAbout from '@/components/sections/about/TextAbout';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
@@ -11,7 +11,7 @@ import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
-import { Award, CheckCircle, Users } from "lucide-react";
+import { Award, CheckCircle, Users, Mail, Phone, Briefcase } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -61,15 +61,16 @@ export default function LandingPage() {
   </div>
 
   <div id="about" data-section="about">
-      <AboutMetric
+      <TextAbout
       useInvertedBackground={true}
-      title="Proven Results"
-      metrics={[
-        { label: "Projects Delivered", value: "120+", icon: CheckCircle },
-        { label: "Happy Clients", value: "85+", icon: Users },
-        { label: "Years Experience", value: "10+", icon: Award },
+      tag="Leadership"
+      tagIcon={Briefcase}
+      title="Ibrahim Odeh: Pioneering Digital Excellence"
+      buttons={[
+        { text: "Connect on LinkedIn", href: "https://linkedin.com/in/ibrahim-odeh" },
+        { text: "Email Ibrahim", href: "mailto:ibrahim@ibrix.digital" }
       ]}
-      metricsAnimation="slide-up"
+      className="bg-[url('https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DygXGhNKmIykMHIKfCzx7B0v4x/uploaded-1779261338417-ancgfolw.png')] bg-no-repeat bg-right-top bg-contain"
     />
   </div>
 
