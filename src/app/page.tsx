@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import TextAbout from '@/components/sections/about/TextAbout';
+import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
@@ -62,16 +62,16 @@ export default function LandingPage() {
   </div>
 
   <div id="about" data-section="about">
-      <TextAbout
+      <TextSplitAbout
       useInvertedBackground={true}
-      tag="Strategic Leader"
-      tagIcon={Award}
-      title="Ibrahim Odeh: Architect of Digital Transformation"
+      title="Architecting Your Digital Future"
+      description={[
+        "Areas of Expertise: Full-Stack Web Engineering, AI Integration, Growth Strategy, and Cloud Architecture.",        "Philosophy: We believe in human-centric innovation. Every line of code is written with purpose, driven by core principles of transparency, scalability, and measurable excellence.",        "Language Proficiency: Expert-level command in TypeScript, Python, and cloud-native infrastructure, with fluent multilingual support for global clients."
+      ]}
       buttons={[
         { text: "View Profile", href: "https://www.linkedin.com/in/ibrahim-nimer-odeh-a1a52878/" },
         { text: "Contact Me", href: "mailto:ibrahim@ibrix.digital" }
       ]}
-      className="bg-[url('https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DygXGhNKmIykMHIKfCzx7B0v4x/uploaded-1779261338417-ancgfolw.png')] bg-no-repeat bg-right-top bg-contain"
     />
   </div>
 
