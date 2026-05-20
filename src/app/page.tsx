@@ -47,6 +47,7 @@ export default function LandingPage() {
         { name: lang === "en" ? "AR" : "EN", id: "#lang-switch" },
       ]}
       brandName="IBRIX"
+      logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DygXGhNKmIykMHIKfCzx7B0v4x/uploaded-1779266268516-nvwsfsat.png"
     />
   </div>
 
@@ -195,6 +196,7 @@ export default function LandingPage() {
       <FooterBaseReveal
       ariaLabel="Footer"
       logoText="IBRIX"
+      logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DygXGhNKmIykMHIKfCzx7B0v4x/uploaded-1779266268516-nvwsfsat.png"
       columns={[
         { title: "Company", items: [{ label: "About", href: "#about" }, { label: "Services", href: "#services" }] },
         { title: "Contact", items: [{ label: "WhatsApp", href: "https://wa.me/962787789915" }, { label: "Email", href: "mailto:info@ibrix.digital" }] },
