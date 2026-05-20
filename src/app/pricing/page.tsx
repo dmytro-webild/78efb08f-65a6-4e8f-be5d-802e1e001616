@@ -24,6 +24,7 @@ export default function PricingPage() {
         <NavbarStyleApple
           navItems={[
             { name: "About", id: "/#about" },
+            { name: "Expertise", id: "/#expertise" },
             { name: "Works", id: "/#works" },
             { name: "Services", id: "/#services" },
             { name: "Testimonials", id: "/#testimonials" },
