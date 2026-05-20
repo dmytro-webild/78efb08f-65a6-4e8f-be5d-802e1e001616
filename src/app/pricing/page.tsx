@@ -38,6 +38,7 @@ export default function PricingPage() {
                 description="Choose the engagement model that fits your business needs."
                 animationType="slide-up"
                 textboxLayout="default"
+                useInvertedBackground={false}
                 plans={[
                     { id: "p1", badge: "Fixed Price", price: "$5k+", subtitle: "Best for well-defined, short-term projects with clear requirements.", features: ["Fixed timeline", "Clear scope", "Dedicated project manager"] },
                     { id: "p2", badge: "Time & Materials", price: "$80/hr", subtitle: "Best for evolving products or long-term growth partnerships.", features: ["Flexible scope", "Dedicated development team", "Direct communication"] },
