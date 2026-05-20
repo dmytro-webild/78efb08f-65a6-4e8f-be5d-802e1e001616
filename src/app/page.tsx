@@ -8,7 +8,7 @@ import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import { Award, CheckCircle, Users } from "lucide-react";
@@ -29,7 +29,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarStyleFullscreen
+      <NavbarStyleApple
       navItems={[
         { name: "About", id: "#about" },
         { name: "Works", id: "#works" },
