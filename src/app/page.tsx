@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
+import { useEffect, useState } from "react";
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FaqBase from '@/components/sections/faq/FaqBase';
@@ -11,9 +12,15 @@ import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
-import { Award, Target, BookOpen, Globe } from "lucide-react";
 
 export default function LandingPage() {
+  const [lang, setLang] = useState("en");
+
+  useEffect(() => {
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-stagger"
@@ -37,6 +44,7 @@ export default function LandingPage() {
         { name: "Services", id: "#services" },
         { name: "Testimonials", id: "#testimonials" },
         { name: "Pricing", id: "/pricing" },
+        { name: lang === "en" ? "AR" : "EN", id: "#lang-switch" },
       ]}
       brandName="IBRIX"
     />
