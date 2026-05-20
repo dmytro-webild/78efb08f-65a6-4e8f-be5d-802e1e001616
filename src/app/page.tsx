@@ -11,7 +11,7 @@ import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
-import { Award } from "lucide-react";
+import { Award, Target, BookOpen, Globe } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -32,6 +32,7 @@ export default function LandingPage() {
       <NavbarStyleApple
       navItems={[
         { name: "About", id: "#about" },
+        { name: "Expertise", id: "#expertise" },
         { name: "Works", id: "#works" },
         { name: "Services", id: "#services" },
         { name: "Testimonials", id: "#testimonials" },
@@ -66,13 +67,37 @@ export default function LandingPage() {
       useInvertedBackground={true}
       title="Architecting Your Digital Future"
       description={[
-        "Areas of Expertise: Full-Stack Web Engineering, AI Integration, Growth Strategy, and Cloud Architecture.",        "Philosophy: We believe in human-centric innovation. Every line of code is written with purpose, driven by core principles of transparency, scalability, and measurable excellence.",        "Language Proficiency: Expert-level command in TypeScript, Python, and cloud-native infrastructure, with fluent multilingual support for global clients."
+        "Philosophy: We believe in human-centric innovation. Every line of code is written with purpose, driven by core principles of transparency, scalability, and measurable excellence."
       ]}
       buttons={[
         { text: "View Profile", href: "https://www.linkedin.com/in/ibrahim-nimer-odeh-a1a52878/" },
         { text: "Contact Me", href: "mailto:ibrahim@ibrix.digital" }
       ]}
     />
+  </div>
+
+  <div id="expertise" data-section="expertise">
+      <FeatureCardSixteen
+        animationType="slide-up"
+        textboxLayout="default"
+        useInvertedBackground={false}
+        title="Areas of Expertise"
+        description="Specialized domains where we deliver industry-leading results."
+        positiveCard={{ items: ["Full-Stack Engineering", "AI System Integration", "Cloud Native Architecture", "Digital Strategy"] }}
+        negativeCard={{ items: ["Core Principles:", "Transparency & Trust", "Scalability by Design", "Measurable Excellence"] }}
+      />
+  </div>
+
+  <div id="languages" data-section="languages">
+      <FeatureCardSixteen
+        animationType="slide-up"
+        textboxLayout="default"
+        useInvertedBackground={true}
+        title="Technical Fluency"
+        description="Global communication and development proficiency."
+        positiveCard={{ items: ["TypeScript/JavaScript", "Python & Data Science", "Cloud-Native Infra", "DevOps Excellence"] }}
+        negativeCard={{ items: ["Languages Support:", "English (Professional)", "Arabic (Native)", "Global Business Standards"] }}
+      />
   </div>
 
   <div id="services" data-section="services">
